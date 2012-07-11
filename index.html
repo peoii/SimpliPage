@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Jamie Harrell</title>
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="js/jquery.placeholder.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/jquery.form.js"></script>
+		<script src="js/modernizr-2.5.3.js"></script>
+		<script>
+			$(function(){
+				$('#contact').validate({
+					submitHandler: function(form) {
+						$(form).ajaxSubmit({
+							url: 'process.php',
+							success: function() {
+								$('#contact').hide();
+								$('#thankyou').show();
+								//$('#thankyou').slideDown();
+								//$('#thanktext').delay(400).show();
+								//$('#thanktext').delay(10000).hide();
+								//$('#thankyou').delay(10005).slideUp();
+								//$('#contact-form').append("<p class='thanks'>Thank you for contacting me! I'll be in touch shortly.</p>")
+							}
+						});
+					}
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<header>
+			<img src="img/avatar.png">
+			<h1>Jamie Harrell</h1>
+			<h3>Information Technologist, and Web Developer</h3>
+		</header>
+<!--
+    <nav>
+        <a href="http://www.peoii.com/"><img src="wordpress_32.png" alt="Jamie's Blog" /></a>
+        <a href="http://plus.google.com/u/0/109839482060908813233"><img src="google_plus_32.png" alt="Jamie on Google+" /></a>
+        <a href="http://twitter.com/peoii"><img src="twitter_32.png" alt="Jamie on Twitter" /></a>
+        <a href="http://www.facebook.com/peoii"><img src="facebook_32.png" alt="Jamie on Facebook" /></a>
+        <a href="http://vimeo.com/peoii"><img src="vimeo_32.png" alt="Jamie on Vimeo" /></a>
+        <a href="http://www.linkedin.com/in/jamieharrell"><img src="linkedin_32.png" alt="Jamie on LinkedIn" /></a>
+        <a href="http://goo.gl/7VRMN" type="text/directory"><img src="vcard.png" alt="Jamie's vCard" /></a>
+        <a href="mailto:jamie@jamieharrell.com"><img src="gmail.png" alt="Email Jamie" /></a>
+    </nav>
+-->
+		<section id="contact-form">
+			<div id="contacttext"><img src="img/contactme.png" alt="contact me" /></div>
+			<form id="contact" method="post" action="">
+				<fieldset>
+					<legend>Contact Me</legend><br />
+					<label for="name">Name:</label><br />
+					<input type="text" name="name" placeholder="Full Name" required="required" class="textbox"><br />
+ 
+					<label for="email">E-mail:</label><br />
+					<input type="email" name="email" placeholder="name@domain.com" required="required" class="textbox"><br />
+          
+					<label for="website">Message:</label><br />
+					<textarea form="contact" name="message" placeholder="What would you like to talk about?" required="required"></textarea><br />
+          
+					<input type="submit" name="submit" id="submit" value="Send Message" /><br />&nbsp;<br />
+				</fieldset>
+			</form>
+			<div id="thankyou"><p>Thank you for contacting me! <br /> I'll be in touch shortly.</p></div>
+		</section>
+		
+		<article id="mainbody">
+			<nav id="socialbar">
+				<a href="http://www.peoii.com/" class="linkblink blog"><span>Blog</span></a>
+				<a href="http://plus.google.com/u/0/109839482060908813233" class="linkblink gplus"><span>Google+</span></a>
+				<a href="http://twitter.com/peoii" class="linkblink twitter"><span>Twitter</span></a>
+				<a href="http://www.linkedin.com/in/jamieharrell" class="linkblink linkedin"><span>LinkedIn</span></a>
+				<a href="http://goo.gl/7VRMN" type="text/directory" class="linkblink myvCard"><span>vCard</span></a>
+				<a href="mailto:jamie@jamieharrell.com" class="linkblink myEmail"><span>Email Me</span></a>
+			</nav>
+
+<!--
+      <aside id="socialbar">
+        <a href="http://plus.google.com/u/0/109839482060908813233"><img src="google_plus_32.png" /></a><br />
+        <a href="http://twitter.com/peoii"><img src="twitter_32.png" /></a><br />
+        <a href="http://www.facebook.com/peoii"><img src="facebook_32.png" /></a><br />
+      </aside>
+-->
+			<p>
+				Jamie Harrell is an information technology specialist and web developer. Over the years he's worked for a variety of 
+				companies from serving his time in the retail sector, to being a part of a global help desk team managing thousands of 
+				VPN connections to hospitals and radiologists from around the globe, to owning his own successful business offering 
+				a wide range of technology solutions for corporate, government, and personal needs.
+			</p>
+      
+			<p>
+				He writes about the never ending journey to find ones self on his <a href="http://www.peoii.com/">blog</a>, he posts his 140 
+				characters at a time on <a href="http://www.twitter.com/peoii">Twitter</a>, takes pictures where he roams at 
+				<a href="http://www.anpobal.com/">An Pobal</a>, is an avid gamer of everything from 
+				<a href="http://us.battle.net/wow/en/character/cenarius/peoii/advanced">World of Warcraft</a> to 
+				<a href="http://www.nationstates.net/peotopia">Nation States</a>, and all this done while listing to his ever growing 
+				<a href="http://www.last.fm/user/peoii">music collection</a>.
+			</p>
+
+			<p>
+				A native of the <a href="http://en.wikipedia.org/wiki/Pacific_northwest">Pacific Northwest</a>, Jamie is currently a permanent 
+				resident in <a href="http://en.wikipedia.org/wiki/Halifax_Regional_Municipality">Halifax, Nova Scotia, Canada</a>.
+			</p>
+
+			<p>
+				Jamie is currently available for <a href="./JamieHarrellResume.pdf" download="Jamie Harrell - Resume">hire</a>, and you can contact him by downloading his 
+				<a href="http://goo.gl/7VRMN">vCard</a>.
+			</p>
+		</article>
+    
+		<footer>
+			Copyright &copy; 2012 by <a href="http://www.jamieharrell.com/">Jamie Harrell</a>.
+		</footer>
+		
+		<address class="vcard">
+			<img style="float:left; margin-right:4px" src="http://www.gravatar.com/avatar/a4b39d0545bf61f6926472dd94f6f70c" alt="photo of Jamie" class="photo"/>
+			<a class="url fn n" href="http://www.jamieharrell.com/"><span class="given-name">Jamie</span> <span class="additional-name">Charles</span> <span class="family-name">Harrell</span></a>
+			<a class="email" href="mailto:jamie@jamieharrell.com">jamie@jamieharrell.com</a>
+			<span class="adr">
+				<span class="locality">Halifax</span>, <span class="region">Nova Scotia</span>, <span class="postal-code">B3M3C5</span> <span class="country-name">Canada</span>
+			</span>
+			<div class="tel">(360)447-8433</div>
+		</address>
+		
+		<script>
+			if (!Modernizr.input.placeholder){
+				$('input[placeholder], textarea[placeholder]').placeholder();
+			}
+		</script>
+	</body>
+</html>
