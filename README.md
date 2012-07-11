@@ -28,4 +28,5 @@ you've done with it.  Your information will not be sold or given away, it is sim
 my work has gone.
 
 Live examples:
-*[jamieharrell.com](http://www.jamieharrell.com/)
+
+* [jamieharrell.com](http://www.jamieharrell.com/)
