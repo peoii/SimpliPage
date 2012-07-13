@@ -4,9 +4,9 @@ SimplíPage - A Personal landing page template
 Developed and Copyright (C) 2012 by Jamie Harrell <jamie@jamieharrell.com>.
 
 
-This source is simply used to power my vCard website located at JamieHarrell.com.  You may use the 
-code associated with it so long as you abide by the information located within the LICENSE file included 
-in the Git repository located at [github.com/peoii](https://github.com/peoii/jamieharrell.com), and that 
+This source for a simple yet stylish personal landing page (or vCard) written in HTML5 and CSS3.  You may use 
+the  code associated with it so long as you abide by the information located within the LICENSE file included 
+in the Git repository located at [github.com/peoii](https://github.com/peoii/SimpliPage), and that 
 this README is included in your package and remains unaltered.
 
 Scan over the document fairly carefully, I've outlined all the non-paragraph information you need to modify
