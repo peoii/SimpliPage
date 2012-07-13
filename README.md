@@ -19,7 +19,7 @@ Items to search for:
 * YOUR_TITLE
 * EMAIL_ADDRESS
 * SOCIAL_LINKS
-* FIRST NAME
+* FIRST_NAME
 
 Those will get you to each of the approperiate areas, thereby allowing you to modify the document to suit 
 your needs.
