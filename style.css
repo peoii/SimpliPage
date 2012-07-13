@@ -222,7 +222,6 @@ section form#contact, #thankyou {
 
 div#contacttext {
   position: fixed;
-  /*background-color: #0099cc;*/
   width: 25px;
   height: 100px;
   top: 20px;
@@ -317,66 +316,3 @@ input#submit:hover {
 legend {
   font-weight: 700;
 }
-
-/* UNUSED 
-
-#thankyou {
-  display: none;
-  width: 500px;
-  background-color: #c5eaf8;
-  border-bottom: 1px solid #33b5e5;
-  border-right: 1px solid #33b5e5;
-  height: 80px;
-  text-align: center;
-  line-height: 75px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-aside {
-  background-color: #ffe;
-  width: 32px;
-  margin-left: 10px;
-  float: right;
-  padding: 16px 6px 6px 6px;
-  border-left: 1px solid #fa0;
-  border-top: 1px solid #fa0;
-  border-right: 1px solid #0099cc;
-  border-bottom: 1px solid #0099cc;
-  border-radius: 12px;
-  -webkit-box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:  2px 2px 5px rgba(50, 50, 50, 0.75);
-  box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.75);
-}
-
-nav {
-  width: 500px;
-}
-nav a img {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-  opacity: 0.5;
-}
-
-nav a:hover img {
-  opacity: 1;
-}
-
-nav a img{
-  padding: 10px;
-}
-
-nav:before{
-  content: "";
-  display: block;
-  height: 1px;
-  width: 500px;
-  background:-moz-linear-gradient(left, #FFFFFF 0%,#0099cc 50%,#FFFFFF 100%);
-  background:-webkit-linear-gradient(left, #FFFFFF 0%,#0099cc 50%,#FFFFFF 100%);
-  background:linear-gradient(left, #FFFFFF 0%,#0099cc 50%,#FFFFFF 100%);
-}
-*/
