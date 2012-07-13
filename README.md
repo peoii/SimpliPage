@@ -1,6 +1,7 @@
-JamieHarrell.com
+SimplíPage
 ================
-Developed by Jamie Harrell <jamie@jamieharrell.com>.
+SimplíPage - A Personal landing page template
+Developed and Copyright (C) 2012 by Jamie Harrell <jamie@jamieharrell.com>.
 
 
 This source is simply used to power my vCard website located at JamieHarrell.com.  You may use the 
