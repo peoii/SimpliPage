@@ -37,6 +37,7 @@ body {
   font-family: 'RobotoLight', sans-serif;
   font-weight: 300;
   font-size: 16px;
+  line-height: 23px;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   color: #666;
@@ -63,7 +64,7 @@ header img {
 footer {
   margin: 10px auto 0px auto;
   font-size: 10px;
-  line-height: 16px;
+  line-height: 17px;
   font-weight: 400;
   width: 624px;
   text-align: center;
@@ -73,7 +74,7 @@ footer {
 h1 {
   color: #0099cc;
   font-size: 60px;
-  line-height: 64px;
+  line-height: 67px;
   font-weight: 300;
   text-transform: uppercase;
   padding-bottom: 10px;
@@ -82,7 +83,7 @@ h1 {
 h3 {
   font-family: 'RobotoLight';
   font-size: 20px;
-  line-height: 24px;
+  line-height: 27px;
   padding-bottom: 10px;
 }
 
@@ -139,7 +140,7 @@ a:hover {
   float: left;
   color: #fff;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 21px;
   font-weight: bold;
   text-align: center;
   height: 2px;
@@ -210,7 +211,8 @@ section form#contact, #thankyou {
   -webkit-border-radius: 0px 0px 0px 10px;  
   -moz-border-radius: 0px 0px 0px 10px;  
   border-radius: 0px 0px 0px 10px;  
-  font-size: 15px;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
   min-height: 350px;
 }
@@ -253,6 +255,7 @@ section#contact-form {
 input, textarea {
   padding: 5px;  
   font-size: 12px;  
+  line-height: 19px;
   text-shadow: 0px 1px 0px #fff;  
   outline: none;  
   border: none;
@@ -277,7 +280,8 @@ form#contact label.error {
 	margin: 3px 0 0 0;
 	display: block;
 	color: #cf0101;                              
-	font-size: 11px; 
+	font-size: 12px; 
+	line-height: 19px;
 	text-align: right;
 }
 
