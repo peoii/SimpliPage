@@ -3,7 +3,7 @@
 	<head>
 		<?php include 'config.php'; ?>
 		<meta charset="utf-8" />
-		<title><?php print $simpliFirstName . " " . $simpliLastName; ?></title>
+		<title><?php print $simpliName; ?></title>
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="shortcut icon" href="favicon.ico" />
