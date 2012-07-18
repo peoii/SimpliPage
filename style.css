@@ -176,24 +176,25 @@ a:hover {
 	opacity: 1;
 }
 
-.blog {
+.socialone {
   background-color: #000;
 }
-.twitter {
-  background-color: #a9eaed;
-}
-.gplus {
+.socialtwo {
   background-color: #db3030;
 }
-.linkedin {
+.socialthree {
+  background-color: #a9eaed;
+}
+.socialfour {
   background-color: #3a8db5;
 }
-.myvCard {
-  background-color: #afd92f;
-}
-.myEmail {
+.socialfive {
   background-color: #e41010;
 }
+.socialsix {
+  background-color: #afd92f;
+}
+
 
 section form#contact, #thankyou {
   position: fixed;

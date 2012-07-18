@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<?php include 'config.php'; ?>
 		<meta charset="utf-8" />
-		<title>YOUR_NAME</title>
+		<title><?php print $simpliFirstName . " " . $simpliLastName; ?></title>
 		<link rel="stylesheet" href="reset.css" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="shortcut icon" href="favicon.ico" />
@@ -30,9 +31,9 @@
 	
 	<body>
 		<header>
-			<img src="img/YOUR_PICTURE.png">
-			<h1>YOUR_NAME</h1>
-			<h3>YOUR_TITLE</h3>
+			<img src="http://www.gravatar.com/avatar/<?php print md5(trim(strtolower($simpliEmail))); ?>?s=100">
+			<h1><?php print $simpliName; ?></h1>
+			<h3><?php print $simpliTitle; ?></h3>
 		</header>
 		<section id="contact-form">
 			<div id="contacttext"><img src="img/contactme.png" alt="contact me" /></div>
@@ -56,12 +57,12 @@
 		
 		<article id="mainbody">
 			<nav id="socialbar">
-				<a href="http://SOCIAL_LINK" class="linkblink blog"><span>Blog</span></a>
-				<a href="http://SOCIAL_LINK" class="linkblink gplus"><span>Google+</span></a>
-				<a href="http://SOCIAL_LINK" class="linkblink twitter"><span>Twitter</span></a>
-				<a href="http://SOCIAL_LINK" class="linkblink linkedin"><span>LinkedIn</span></a>
-				<a href="http://SOCIAL_LINK" type="text/directory" class="linkblink myvCard"><span>vCard</span></a>
-				<a href="mailto:EMAIL_ADDRESS" class="linkblink myEmail"><span>Email Me</span></a>
+				<a href="<?php print $simpliSocial1URL; ?>" class="linkblink socialone"><span><?php print $simpliSocial1Name; ?></span></a>
+				<a href="<?php print $simpliSocial2URL; ?>" class="linkblink socialtwo"><span><?php print $simpliSocial2Name; ?></span></a>
+				<a href="<?php print $simpliSocial3URL; ?>" class="linkblink socialthree"><span><?php print $simpliSocial3Name; ?></span></a>
+				<a href="<?php print $simpliSocial4URL; ?>" class="linkblink socialfour"><span><?php print $simpliSocial4Name; ?></span></a>
+				<a href="<?php print $simpliSocial5URL; ?>" class="linkblink socialfive"><span><?php print $simpliSocial5Name; ?></span></a>
+				<a href="http://h2vx.com/vcf/<?php print parse_url($simpliURL, PHP_URL_HOST);?>" type="text/directory" class="linkblink socialsix"><span>vCard</span></a>
 			</nav>
 
 			<p>
@@ -93,17 +94,17 @@
 		</article>
     
 		<footer>
-			Content Copyright &copy; 2012 by <a href="YOUR_LINK">YOUR_NAME</a>. Fork this project over at <a href="https://github.com/peoii/SimpliPage">GitHub</a>.
+			Content Copyright &copy; 2012 by <a href="<?php print $simpliURL; ?>"><?php print $simpliName; ?></a>. Fork this project over at <a href="https://github.com/peoii/SimpliPage">GitHub</a>.
 		</footer>
 		
 		<address class="vcard">
-			<img style="float:left; margin-right:4px" src="" alt="photo of YOU" class="photo"/>
-			<a class="url fn n" href="http://YOUR_SITE"><span class="given-name">FIRST_NAME</span> <span class="additional-name">MIDDLE_NAME(S)</span> <span class="family-name">LAST_NAME</span></a>
-			<a class="email" href="mailto:EMAIL_ADDRESS">EMAIL_ADDRESS</a>
+			<img style="float:left; margin-right:4px" src="http://www.gravatar.com/avatar/<?php print md5(trim(strtolower($simpliEmail))); ?>" alt="photo of <?php print $simpliName; ?>" class="photo"/>
+			<a class="url fn n" href="<?php print $simpliURL; ?>"><span class="given-name"><?php print $simpliFirstName; ?></span> <span class="additional-name"><?php print $simpliMiddleName; ?></span> <span class="family-name"><?php print $simpliLastName; ?></span></a>
+			<a class="email" href="mailto:<?php print $simpliEmail; ?>"><?php print $simpliEmail; ?></a>
 			<span class="adr">
-				<span class="locality">CITY</span>, <span class="region">STATE/PROV</span>, <span class="postal-code">ZIP/POSTAL_CODE</span> <span class="country-name">COUNTRY</span>
+				<span class="locality"><?php print $simpliCity; ?></span>, <span class="region"><?php print $simpliState; ?></span>, <span class="postal-code"><?php print $simpliZip; ?></span> <span class="country-name"><?php print $simpliCountry; ?></span>
 			</span>
-			<div class="tel">TELEPHONE_NUMBER</div>
+			<div class="tel"><?php print $simpliPhone; ?></div>
 		</address>
 		
 		<script>

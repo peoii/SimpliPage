@@ -6,8 +6,10 @@ $phone = strip_tags($_POST['phone']);
 $url = strip_tags($_POST['url']);
 $message = strip_tags($_POST['message']);
 
+include 'config.php';
+
 // Send Message
-mail( "jamie@jamieharrell.com", "Contact Form Submission",
-"Name: $name\nEmail: $email\nPhone: $phone\nWebsite: $url\nMessage: $message\n",
-"From: Jamie Harrell <jamie@jamieharrell.com>" );
+mail( $simpliEmail, "Contact Form Submission",
+"Name: $name\nEmail: $email\nPhone: $phone\nWebsite: $url\nMessage: $message\n", 
+"From: $simpliName <$simpliEmail>");
 ?>
